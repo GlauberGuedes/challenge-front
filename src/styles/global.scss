@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 55px 12px 35px;
+  box-shadow: 0 0 10px 0 rgba(34, 33, 33, 0.349);
+  height: 75px;
+  align-items: center;
+  position: relative;
+
+  .menu {
+    display: block;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .icone {
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  .carrinho {
+    position: absolute;
+    width: 350px;
+    top: 75px;
+    right: 55px;
+    background-color: rgba(212, 212, 212, 0.753);
+
+    .lista-produtos {
+      max-height: 400px;
+      overflow-y: auto;
+
+      .card {
+        background-color: rgb(235, 235, 235);
+        display: flex;
+        border-bottom: 1px solid rgba(138, 135, 135, 0.753);
+        height: 120px;
+        padding: 15px;
+        gap: 15px;
+
+        p {
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+
+        .card-valor {
+          display: flex;
+          gap: 25px;
+
+          span {
+            color: rgb(26, 197, 26);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .valor-pedido {
+    text-align: center;
+    margin: 15px 0;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  button {
+    background-color: rgb(26, 197, 26);
+    height: 60px;
+    width: 100%;
+    border: unset;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    height: 50px;
+    padding: 0 20px 0 20px;
+
+    .menu {
+      display: none;
+    }
+
+    .menu-mobile {
+      display: block;
+      position: relative;
+      margin-right: 40px;
+    }
+
+    .logo {
+      width: 100px;
+      margin-right: auto;
+    }
+
+    .icone {
+      font-size: 12px;
+    }
+
+    nav {
+      gap: 15px;
+    }
+
+    .carrinho {
+      width: 250px;
+      top: 50px;
+      right: 15px;
+
+      .lista-produtos {
+
+        .card {
+
+          p {
+            font-size: 8px;
+          }
+  
+          span, h4 {
+            font-size: 12px;
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+@import './listaHeader.scss';

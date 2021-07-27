@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/global.scss";
 import logo from "./assets/agencia-eplus-n-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

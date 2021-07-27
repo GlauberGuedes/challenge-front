@@ -1,5 +1,3 @@
-import "./style.css";
-
 export default function ListaHeader () {
   return(
     <div className="lista">
