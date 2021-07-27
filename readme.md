@@ -39,6 +39,18 @@ Então mãos a obra e bom challenge ;)
 
 ## Como executar o projeto
 
+  # https://glauber-challengefront.netlify.app/
+
+ou
+
 - clonar repositório
-- dar um "npm i" no terminal(para instalar o node_modules)
-- depois só dar um "npm start"
+- "npm i" no terminal(para instalar as dependências)
+- "npm start" para inicializar o projeto
+
+## Desenvolvimento
+
+- Foi utilizado o ReactJS para realizar o projeto, com o pré-processador de css: Sass
+- Para requisição do arquivo json foi utilizado o fetch
+- Na versão mobile foi colocado um menu do tipo hambúrguer
+- O valor total das mercadorias do carrinho é dinâmico
+- Os icones utilizados foi pego através da biblioteca fontawesome
