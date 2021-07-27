@@ -1,0 +1,22 @@
+.lista {
+  display: flex;
+  gap: 25px;
+}
+
+@media screen and (max-width: 450px) {
+  .lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 35px;
+    background-color: rgb(255, 249, 249);
+    box-shadow: 0 0 8px 0 rgb(107, 107, 107);
+    width: 70px;
+    border-radius: 7px;
+    text-align: center;
+  }
+  .lista p {
+    font-size: 8px;
+  }
+}

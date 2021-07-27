@@ -15,17 +15,16 @@ header {
 }
 
 .menu {
+  display: block;
+}
+
+.menu-mobile{
   display: none;
 }
 
 .header-conteudo {
   display: flex;
   gap: 50px;
-}
-
-.lista {
-  display: flex;
-  gap: 25px;
 }
 
 nav {
@@ -49,7 +48,7 @@ nav {
   background-color: rgba(212, 212, 212, 0.753);
 }
 
-.lista-carrinho {
+.lista-produtos {
   max-height: 400px;
   overflow-y: auto;
 }
@@ -101,20 +100,22 @@ button {
 @media screen and (max-width: 450px) {
   header {
     height: 50px;
-    padding: 0;
+    padding: 0 20px 0 20px;
+  }
+  .menu{
+    display: none;
+  }
+  .menu-mobile{
+    display: block;
+    position: relative;
+    margin-right: 40px;
   }
   .logo {
-    width:80px;
-  }
-  .lista {
-    display: flex;
-    gap: 5px;
-  }
-  .lista p {
-    font-size: 8px;
+    width:100px;
+    margin-right: auto;
   }
   nav {
-    gap: 5px;
+    gap: 15px;
   }
   .carrinho {
     width: 250px;
@@ -122,6 +123,12 @@ button {
     right: 15px;
   }
   .icone {
+    font-size: 12px;
+  }
+  .card p {
+    font-size: 8px;
+  }
+  .card h4, span {
     font-size: 12px;
   }
 }
