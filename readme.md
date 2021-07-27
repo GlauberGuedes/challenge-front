@@ -39,6 +39,6 @@ Então mãos a obra e bom challenge ;)
 
 ## Como executar o projeto
 
--clonar repositório
--dar um "npm i" no terminal(para instalar o node_modules)
--depois só dar um "npm start"
+- clonar repositório
+- dar um "npm i" no terminal(para instalar o node_modules)
+- depois só dar um "npm start"
