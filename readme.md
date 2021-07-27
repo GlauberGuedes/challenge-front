@@ -36,3 +36,9 @@ Então mãos a obra e bom challenge ;)
 - Boa descrição das funcionalidades do desafio
 - Fidelidade ao design proposto
 - Adaptação mobile
+
+## Como executar o projeto
+
+- clonar repositório
+- dar um "npm i" no terminal(para instalar o node_modules)
+- depois só dar um "npm start"
