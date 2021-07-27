@@ -14,6 +14,15 @@ header {
   position: relative;
 }
 
+.menu {
+  display: none;
+}
+
+.header-conteudo {
+  display: flex;
+  gap: 50px;
+}
+
 .lista {
   display: flex;
   gap: 25px;
@@ -87,4 +96,32 @@ button {
   color: white;
   font-weight: 700;
   font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    height: 50px;
+    padding: 0;
+  }
+  .logo {
+    width:80px;
+  }
+  .lista {
+    display: flex;
+    gap: 5px;
+  }
+  .lista p {
+    font-size: 8px;
+  }
+  nav {
+    gap: 5px;
+  }
+  .carrinho {
+    width: 250px;
+    top: 50px;
+    right: 15px;
+  }
+  .icone {
+    font-size: 12px;
+  }
 }
